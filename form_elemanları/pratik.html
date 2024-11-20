@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML FORM</h1>
+    <form>
+        <fieldset>
+            <legend>Kişisel:</legend>
+            <div>
+                <label for="name">İsim:</label>
+                <input type="text" id="name"required><br><br>
+            </div>
+            <div>
+                <label for="lastname">Soyisim:</label>
+                <input type="text" id="lastname"required><br><br>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required><br><br>
+            </div>
+            <div>
+                <label for="password">Şifre</label>
+                <input type="password" name="password" id="password" required><br><br>
+            </div>
+            <div>
+                <label for="gender">Cinsiyet:</label>
+                <input type="radio" name="gender" value="male">Erkek
+                <input type="radio" name="gender" value="female">Kadın
+            </div>
+            <div>
+                <label for="birthday">Doğum Tarihi:</label>
+                <input type="date" id="birthday"required><br><br>
+            </div>
+            <div>
+                <label for="meyve">Favori Meyve:</label>
+                <select id="meyve" name="meyve">
+                    <option value="">Seçiniz</option>
+                    <option value="çilek">Çilek</option>
+                    <option value="muz">Muz</option>
+                    <option value="kiraz">Kiraz</option>
+                </select><br><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Mesaj:</legend>
+            <div>
+                <label for="message">Mesaj:</label>
+                <textarea id="message" rows="5" cols="50"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Gönder</button>
+        </fieldset>
+    </form>
+</body>
+</html>
